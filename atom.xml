@@ -6,7 +6,7 @@
   <link href="https://github.com/ncnnn/ncnnn.github.io/atom.xml" rel="self"/>
   
   <link href="https://github.com/ncnnn/ncnnn.github.io/"/>
-  <updated>2024-04-13T13:52:05.192Z</updated>
+  <updated>2024-04-15T04:50:44.964Z</updated>
   <id>https://github.com/ncnnn/ncnnn.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>yacc安装配置</title>
+    <link href="https://github.com/ncnnn/ncnnn.github.io/2024/04/15/yacc%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>https://github.com/ncnnn/ncnnn.github.io/2024/04/15/yacc%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
+    <published>2024-04-15T04:45:50.000Z</published>
+    <updated>2024-04-15T04:50:44.964Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th><strong>实验目的</strong></th><th>（1）通过实验，掌握lex软件和yacc软件的安装和配置流程；  （2）通过实验，了解lex软件的工作流程；  （3）初步认识lex编程。</th></tr></thead><tbody><tr><td><strong>实验设备</strong>  <strong>（环境）</strong>  <strong>及要求</strong></td><td>lex  yacc  MinGW  Win10笔记本电脑</td></tr><tr><td><strong>实验内容</strong></td><td>（1）在windows下安装和配置lex；  （2）测试lex。  （3）编写简单lex程序。</td></tr><tr><td><strong>实验步骤及结果</strong></td><td>实验一、在windows下安装和配置lex。                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png" alt="img">             1.首先，下载flex和bison。  2. 点击flex安装程序     <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png" alt="img">3. 同意协议  4.安装时，设定路径最好不要是在Program Files文件夹里面，因为文件夹名字带空格会影响以后的使用。可安装在C:\GnuWin32下面。  <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png" alt="img">                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png" alt="img">             5.勾选     6.  选择要安装的组件，下一步                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png" alt="img">                                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png" alt="4c00748eaa6b5e9ddf656bbd01bc9b0">               7.创建快捷方式                                   <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png" alt="0caf1df95864bb9a28c7e0503f0fada">               <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png" alt="img">8.点击安装     <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png" alt="img">9.安装完成                                   <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png" alt="866cdc0c8b95cd7fec58fa2985d2bde">             10. 点击Bison安装程序                                   <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png" alt="1b8fd86faa7fc8af201ddbbc11fac33">             11.同意协议     12.选择安装位置                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image021.png" alt="f6335146dadfdc7f289a303bbdd0e78">               13.  选择要安装的组件                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png" alt="a7095255cbff289da54dbd52c4a08a0">                                             <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image025.png" alt="img">             14. 选择开始菜单文件夹                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image027.png" alt="6a5926ca14de4c2806575af93dc4ba3">             15. 创建快捷方式        16. 准备安装                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image029.png" alt="b8de11c461a1165f226b5e4313ba8f6">               <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image031.png" alt="img">17.等待安装     18.安装成功                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image032.png" alt="0082ab875ddb2881f326432fde79d36">               19.安装mingw5.1.6                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image034.png" alt="img">               <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image036.png" alt="img">20.下一步  <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image038.png" alt="6c317527df93b3ca5115c2760b56819">  21.下载并安装     <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image040.png" alt="2ec3517014126d1ff595a75197df662">   22.同意协议     23. 选择要安装的MinGw软件包。  <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image042.png" alt="img">     24. 选择要安装的MinGW组件                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image044.png" alt="img">               25.选择要安装MinGW组件的文件夹。  <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image046.png" alt="img">26. 为MinGW 5.1.6快捷方式选择开始菜单文件夹                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image048.png" alt="60bc2afcdeb38d1a0b0f5e086762c31">                     <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image050.png" alt="img">27.等待安装     28.  安装完成  <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image052.png" alt="580876a32bc9ac9b1d7baf88a057628">29.安装完毕后，将C:\GnuWin32 \lib里面的libfl.a和liby.a复制到C:\MinGW\lib里面。     <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image054.png" alt="e690d66ac8335cbe0bd08ee5a9b785a">  将C:\GnuWin32  \lib里面的libfl.a和liby.a复制到C:\MinGW\lib                              <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image056.png" alt="5feb3b48fe68c8e9b1f19be42ea0d55">             里面                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image058.png" alt="33989075f6f8341b646b8da3621fa8e">               30.设置环境变量。现在该安装的都已安装完毕，设置环境变量。右键点击“计算机”、“属性”、“高级系统设置”、“环境变量”，在下面系统变量里面找到PATH，修改，在后面加上C:\GnuWin32 \bin和C:\MinGW\bin。                                      <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image060.png" alt="e923bae84807101713cc03ad2378702">               <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image062.png" alt="img">设置环境变量     实验二：编写简单lex程序测试安装  （1）在d盘下新建文本文件，更改名称为lex.l，敲入下面代码  %{  int yywrap(void);  %}  %%  %%  int yywrap(void)  {  return 1;                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image063.png" alt="img">             }     （2）在d盘下新建文本文件，更改名称为yacc.y,敲入下面代码  %{  void yyerror(const char *s);  %}  %%  program:  ;  %%  void yyerror(const char *s)  {  }  int main()  {  yyparse();  return 0;                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image065.png" alt="img">             }                                   <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image066.png" alt="img">             （3）按“win+R”， 输入“cmd”打开控制台，  使用dos命令进入到刚才所建立文件（lex.l,yacc.y）所在的文件夹d盘。  输入 d:  回车符  （如果是c盘，则连续输入“cd.. 回车符”）  输入 flex lex.l   回车符  输入 bison yacc.y   回车符                                <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image068.jpg" alt="1b73e17c5a611f88f5e4e45b112342a">                           如果看到当前文件夹上多了两个文件（yacc.tab.c，lex.yy.c），那么说明lex&amp;&amp;yacc已经安装配置成功。     <img src="file:///C:/Users/Zys/AppData/Local/Temp/msohtmlclip1/01/clip_image070.png" alt="img"></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;实验目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;（1）通过实验，掌握lex软件和yacc软件的安装和配置流程；  （2）通过实验，了解lex软件的工作流程；  （3）初步认识lex编程。&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/t</summary>
+      
+    
+    
+    
+    
+    <category term="编译原理" scheme="https://github.com/ncnnn/ncnnn.github.io/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
