@@ -1,2 +1,5 @@
+https://github.com/ncnnn/ncnnn.github.io/link/index.html
+https://github.com/ncnnn/ncnnn.github.io/categories/index.html
+https://github.com/ncnnn/ncnnn.github.io/tags/index.html
 https://github.com/ncnnn/ncnnn.github.io/2024/04/13/hello-world/
 https://github.com/ncnnn/ncnnn.github.io
